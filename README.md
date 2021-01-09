@@ -1,4 +1,6 @@
-# Typescript Starter Project
+# Grokking The Coding Interview Solutions
+
+Done in Typescript.
 
 ## Development
 
