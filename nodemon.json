@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": ".ts",
+  "ignore": ["jest.config.js"],
+  "exec": "ts-node-script"
+}
