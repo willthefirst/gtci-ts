@@ -1,0 +1,28 @@
+// Go throughs solutions, each time discussing time and space complexity.
+
+// todo
+  how do we initialize minLength?
+
+k: 5
+arr: [1, 2, 3, 1]
+minLength = this would start as the array size UNLESS its sum < k.
+windowStart = 0
+
+--
+arr: [1, 2, 3, 1]
+      *******
+minLength: 3. 
+windowStart: 0
+windowSum: 3;
+i: 2
+
+iterate through the array, growing and shrinking the window accordingly...
+    if (windowSum + arr[i]) < k
+      add arr[i] to windowSum, 
+      increment i.
+    else
+      minLength = min(minlength, (i - windowStart + 1))
+
+
+
+
