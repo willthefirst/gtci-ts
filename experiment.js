@@ -1,2 +1,8 @@
-// This file is just for running quick js experiment.
-console.log('Run Javascript experiments here.');
+const obj = {
+  a: 1
+};
+
+const b = obj['a'];
+console.log(b);
+obj['a']++;
+console.log(b);
