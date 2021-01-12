@@ -1,8 +1,3 @@
-const obj = {
-  a: 1
-};
+const arr = [2];
 
-const b = obj['a'];
-console.log(b);
-obj['a']++;
-console.log(b);
+console.log(Math.pow(arr[-1]) > 2);
