@@ -9,7 +9,6 @@ const triplet_sum_close_to_target = function (
   arr.sort((a, b) => a - b);
 
   for (let i = 0; i < left; i++) {
-    console.log(arr, arr[i], arr[left], arr[right]);
     const sum = arr[i] + arr[right] + arr[left];
     const diff = target_sum - sum;
 
@@ -26,16 +25,6 @@ const triplet_sum_close_to_target = function (
     }
   }
   return closestSum;
-
-  /*   
-
-    [-3, -1, 1, 2]
-         *   L  R
-
-    closestSum = 0;
-    target = 1;
-    sum = 0;
-}; */
 };
 
 console.log(triplet_sum_close_to_target([-3, -1, 1, 2], 1));

@@ -1,13 +1,20 @@
 const remove_duplicates = function (arr: number[]): number {
-  let i = 0;
-  while (i < arr.length - 1) {
-    if (arr[i + 1] === arr[i]) {
-      arr.splice(i, 1);
-    } else {
-      i++;
+  let nextUnique = 1;
+  let i = 1;
+
+  while (i < arr.length) {
+    if (arr[nextUnique - 1] !== arr[i]) {
+      arr[nextUnique] = arr[i];
+      nextUnique++;
     }
+    i++;
   }
-  return arr.length;
+  return nextUnique;
+
+  /* 
+  [2, 3, 6, 9, 6, 9, 9]
+            u           i 
+  */
 };
 
 console.log(remove_duplicates([2, 3, 3, 3, 6, 9, 9]));
